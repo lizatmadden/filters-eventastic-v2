@@ -1,0 +1,48 @@
+@import "./style.scss";
+
+.#{$block-prefix}-search-results-filter {
+	* {
+		box-sizing: border-box;
+	}
+
+	.search-filters {
+		.filter-search-input {
+			.search-input {
+				margin: 0;
+				pointer-events: none;
+			}
+		}
+		.filter-dropdowns {
+			.filter {
+				float: none;
+				margin: 0;
+			}
+			.filter-select-content {
+				display: none !important;
+			}
+		}
+	}
+
+	.search-results {
+		.results-grid {
+			.grid-item {
+				.overlay-link {
+					pointer-events: none;
+				}
+
+				.content {
+					.event-icon {
+						box-sizing: content-box;
+					}
+				}
+			}
+		}
+	}
+
+	.wp-block-button__link {
+		background-color: transparent;
+		border-radius: 5px;
+		border-width: 2px;
+		font-family: $font-header;
+	}
+}
